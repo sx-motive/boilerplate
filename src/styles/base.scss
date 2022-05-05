@@ -1,0 +1,49 @@
+$title-ff: "Stanger", sans-serif;
+$default-ff: "ApercuPro", sans-serif;
+
+$white: rgb(255, 255, 255);
+$light: #ebebeb;
+$black: rgb(0, 0, 0);
+$dark: rgb(26, 26, 26);
+$color-theme: rgb(219, 190, 155);
+$color-middle: rgb(122, 122, 122);
+$color-gray-pink: rgb(231, 223, 214);
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: $default-ff;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+
+  color: $white;
+  background-color: $black;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 200px 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
