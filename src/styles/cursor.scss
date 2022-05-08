@@ -1,0 +1,133 @@
+.ht-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1150;
+  contain: layout style size;
+  pointer-events: none;
+  will-change: transform;
+  transition: opacity 0.3s, color 0.4s;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    transform: scale(0);
+    background: currentColor;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, opacity 0.1s;
+  }
+}
+
+.ht-cursor .ht-cursor-text {
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0) rotate(10deg);
+  opacity: 0;
+  color: $black;
+  mix-blend-mode: difference;
+  font-size: 1rem;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  transition: opacity 0.4s, transform 0.3s;
+}
+
+@supports (mix-blend-mode: exclusion) {
+  .ht-cursor.-exclusion,
+  .ht-cursor.-opaque {
+    mix-blend-mode: exclusion;
+  }
+}
+
+@supports (mix-blend-mode: exclusion) {
+  .ht-cursor.-exclusion:before,
+  .ht-cursor.-opaque:before {
+    background: $white;
+  }
+}
+
+.ht-cursor.-normal,
+.ht-cursor.-text {
+  mix-blend-mode: normal;
+}
+
+.ht-cursor.-normal:before,
+.ht-cursor.-text:before {
+  background: currentColor;
+}
+
+.ht-cursor.-inverse {
+  color: $black;
+}
+
+.ht-cursor.-visible:before {
+  transform: scale(0.2);
+}
+
+.ht-cursor.-visible.-active:before {
+  transform: scale(0.23);
+  transition-duration: 0.2s;
+}
+
+.ht-cursor.-pointer:before {
+  transform: scale(0.15);
+}
+
+.ht-cursor.-text:before {
+  opacity: 1;
+  transform: scale(3);
+}
+
+.ht-cursor.-text .ht-cursor-text {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ht-cursor.-text.-active:before {
+  transform: scale(1.6);
+  transition-duration: 0.2s;
+}
+
+.ht-cursor.-opaque:before {
+  transform: scale(1.32);
+}
+
+.ht-cursor.-opaque.-active:before {
+  transform: scale(1.2);
+}
+
+.ht-cursor.disable:before {
+  transform: scale(0);
+}
+
+.ht-cursor.-md:before {
+  transform: scale(1.5);
+}
+
+.ht-cursor.-lg:before {
+  transform: scale(2);
+}
+.ht-cursor.-menu:before {
+  transform: scale(0.7);
+  background-color: transparent;
+  border: 1px solid $white;
+}
+
+.ht-cursor.-hero:before {
+  transform: scale(3.5);
+  background-color: $white;
+}
+
+.ht-cursor.-hidden:before {
+  transform: scale(0);
+}

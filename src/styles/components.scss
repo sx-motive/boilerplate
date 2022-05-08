@@ -1,0 +1,34 @@
+.container {
+  &.btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .wrap {
+      position: relative;
+      width: 25%;
+      height: 15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(224, 224, 224);
+      margin-left: -1px;
+      margin-top: -1px;
+      .subtitle {
+        position: absolute;
+        bottom: 1.5rem;
+        font-size: 0.5rem;
+        opacity: 0.2;
+      }
+    }
+    .button {
+      margin: 0 20px;
+    }
+  }
+}
+.s-images {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+}
