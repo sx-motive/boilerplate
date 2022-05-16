@@ -5,11 +5,12 @@ $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
 
 $light: #ebebeb;
-$dark: rgb(26, 26, 26);
+$dark: rgb(24, 23, 23);
 
 $color-theme: rgb(219, 190, 155);
 $color-middle: rgb(122, 122, 122);
 $color-gray-pink: rgb(231, 223, 214);
+$color-border: rgba(141, 141, 141, 0.247);
 
 *,
 *:after,
@@ -18,7 +19,7 @@ $color-gray-pink: rgb(231, 223, 214);
 }
 
 html {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 body {
@@ -45,7 +46,10 @@ a {
   text-decoration: none;
 }
 
+ul,
 li {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -54,12 +58,11 @@ section {
   width: 100%;
   margin: 0;
   padding: 200px 0;
-  background-color: $light;
 }
 
 .container {
   position: relative;
-  width: calc(100% - 16rem);
+  width: 1250px;
   margin: 0 auto;
 }
 
