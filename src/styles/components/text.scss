@@ -1,0 +1,51 @@
+div.text {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  &.caption {
+    font-family: $title-ff;
+    font-weight: 500;
+    margin-top: 4rem;
+    .line-wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      .text-line {
+        position: relative;
+        display: block;
+        transform-origin: top left;
+      }
+    }
+    &.main {
+      font-size: 10rem;
+    }
+    &.big {
+      font-size: 6rem;
+    }
+    &.medium {
+      font-size: 4rem;
+    }
+    &.small {
+      font-size: 2rem;
+    }
+  }
+  &.paragrapth {
+    font-family: $default-ff;
+    font-weight: 400;
+    .line-wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+
+      overflow: hidden;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      .text-line {
+        position: relative;
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
+}

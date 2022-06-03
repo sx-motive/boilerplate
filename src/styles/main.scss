@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-@import "locomotive.scss";
+@import "base/fonts.scss";
+@import "base/base.scss";
+@import "vendors/locomotive.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/menu.scss";
 
-@import "fonts.scss";
-@import "base.scss";
-@import "layout.scss";
+@import "components/text.scss";
+@import "components/cursor.scss";
+@import "components/button.scss";
 
-@import "text.scss";
-@import "cursor.scss";
-@import "button.scss";
-
-@import "components.scss";
+@import "pages/index.scss";

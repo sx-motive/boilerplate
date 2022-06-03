@@ -118,9 +118,8 @@
   transform: scale(2);
 }
 .ht-cursor.-menu:before {
-  transform: scale(0.7);
-  background-color: transparent;
-  border: 1px solid $white;
+  transform: scale(1);
+  background-color: $white;
 }
 
 .ht-cursor.-hero:before {

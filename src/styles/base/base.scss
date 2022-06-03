@@ -7,10 +7,14 @@ $black: rgb(0, 0, 0);
 $light: #ebebeb;
 $dark: rgb(24, 23, 23);
 
+$color-background: rgb(10, 10, 10);
 $color-theme: rgb(219, 190, 155);
 $color-middle: rgb(122, 122, 122);
 $color-gray-pink: rgb(231, 223, 214);
 $color-border: rgba(141, 141, 141, 0.247);
+
+$global-padding-side: 4rem;
+$header-padding-top: 4rem;
 
 *,
 *:after,
@@ -19,7 +23,7 @@ $color-border: rgba(141, 141, 141, 0.247);
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
@@ -37,8 +41,8 @@ body {
   font-weight: 300;
   line-height: 1;
 
-  color: $black;
-  background-color: $white;
+  color: $white;
+  background-color: $color-background;
 }
 
 a {
@@ -57,12 +61,16 @@ section {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 200px 0;
+  padding: 100px 0;
+  &.hero {
+    padding-top: 30vh;
+    padding-bottom: 0;
+  }
 }
 
 .container {
   position: relative;
-  width: 1250px;
+  width: calc(100% - ($global-padding-side * 2));
   margin: 0 auto;
 }
 

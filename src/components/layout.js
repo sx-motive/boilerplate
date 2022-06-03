@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import useScript from "../../utils/useScript";
+import useScript from "../utils/useScript";
 
 import Header from "./header";
 import Footer from "./footer";
@@ -33,7 +33,7 @@ export default function Layout({ children }) {
       <Header />
       {children}
       <Footer />
-      {/*<Menu />*/}
+      <Menu />
     </main>
   );
 }

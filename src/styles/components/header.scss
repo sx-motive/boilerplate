@@ -1,0 +1,29 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: $header-padding-top $global-padding-side 0 $global-padding-side;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 200;
+  .logo {
+    font-family: $default-ff;
+    font-size: 1rem;
+  }
+  ul.header-menu {
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20rem;
+    li {
+      position: relative;
+      width: 50%;
+      margin-bottom: 1rem;
+      &.active {
+        opacity: 0.25;
+      }
+    }
+  }
+}

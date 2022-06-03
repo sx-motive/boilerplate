@@ -10,24 +10,29 @@ export default function Components() {
     <>
       <section className="s-caption" data-scroll-section>
         <div className="container">
-          <Text h size="medium">
+          <Text caption size="medium">
             Captions
           </Text>
-          <Text p size="medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          <Text>
+            Давно выяснено, что при оценке дизайна и композиции читаемый текст
+            мешает сосредоточиться. Lorem Ipsum используют потому, что тот
+            обеспечивает более или менее стандартное заполнение шаблона, а также
+            реальное распределение букв и пробелов в абзацах, которое не
+            получается при простой дубликации "Здесь ваш текст.. Здесь ваш
+            текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+            редакторы HTML используют Lorem Ipsum в качестве текста по
+            умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу
+            показывает, как много веб-страниц всё ещё дожидаются своего
+            настоящего рождения. За прошедшие годы текст Lorem Ipsum получил
+            много версий. Некоторые версии появились по ошибке, некоторые -
+            намеренно (например, юмористические варианты).
           </Text>
         </div>
         <div className="container">
-          <Text h size="big">
+          <Text caption size="big">
             Title level 1
           </Text>
-          <Text p size="big">
+          <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -36,10 +41,10 @@ export default function Components() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </Text>
-          <Text h size="medium">
+          <Text caption size="medium">
             Title level 2
           </Text>
-          <Text p size="medium">
+          <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -48,10 +53,10 @@ export default function Components() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </Text>
-          <Text h size="small">
+          <Text caption size="small">
             Title level 3
           </Text>
-          <Text p size="small">
+          <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
